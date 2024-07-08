@@ -1,9 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import "./App.css";
-import { createQueryFactory } from "../submodules/simple-querykey-factory/dist";
+import { createQueryKeyFactory, keyChain } from "@kkoms/query-key-chain";
 
-const baseKey = createQueryFactory("test");
+const chain = createQueryKeyFactory("test");
+const baseKey = chain("test");
 
 function App() {
   const client = useQueryClient();

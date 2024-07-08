@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@kkoms/query-key-chain':
+        specifier: ^0.4.0
+        version: 0.4.0
       '@tanstack/react-query':
         specifier: ^5.50.1
         version: 5.50.1(react@18.3.1)
@@ -222,6 +225,9 @@ packages:
   '@humanwhocodes/object-schema@2.0.3':
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
+
+  '@kkoms/query-key-chain@0.4.0':
+    resolution: {integrity: sha512-97vsPIYBHiVh+Tt+TMu+urdoNnwwBCMQDROfGv1GUuKAChreazZPgXWfFBdhcY8gdB2Q8QstI8aVs5Vh2ywUSA==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1093,6 +1099,8 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/object-schema@2.0.3': {}
+
+  '@kkoms/query-key-chain@0.4.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
