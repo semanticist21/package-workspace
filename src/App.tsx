@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import "./App.css";
-import { createQueryKeyFactory, keyChain } from "@kkoms/query-key-chain";
+import { createQueryKeyFactory } from "../submodules/simple-querykey-factory/src";
 
 const chain = createQueryKeyFactory("test");
 const baseKey = chain("test");
