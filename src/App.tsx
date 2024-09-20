@@ -44,37 +44,12 @@ function App() {
     queryFn: mockAsync1,
   });
 
-  const query8 = useQuery({
-    queryKey: baseKey.lists().action("test"),
-    queryFn: mockAsync1,
-  });
-
-  const query9 = useQuery({
-    queryKey: baseKey.lists().detail("test").action("test"),
-    queryFn: mockAsync1,
-  });
-
   const query91 = useQuery({
     queryKey: baseKey.list("test").detail("t2e2s2t"),
     queryFn: mockAsync1,
   });
 
-  const query10 = useQuery({
-    queryKey: baseKey.lists().action("test").params({
-      test1: "test",
-      test2: "test",
-    }),
-    queryFn: mockAsync1,
-  });
-
-  const query11 = useQuery({
-    queryKey: baseKey.lists().params({
-      test1: "test",
-      test2: "test",
-    }),
-    queryFn: mockAsync1,
-  });
-
+  
   const query12 = useQuery({
     queryKey: baseKey.action("test").params(4),
     queryFn: mockAsync1,
